@@ -65,20 +65,24 @@ class PKCanvas: UIView {
 extension PKCanvas: PKCanvasViewDelegate {
     /// Delegate method: Note that the drawing has changed.
     func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
+        // whenever drawing is changed on the canvas
         print("canvasViewDrawingDidChange")
     }
 }
 
 extension PKCanvas: PKToolPickerObserver {
     func toolPickerSelectedToolDidChange(_ toolPicker: PKToolPicker) {
+        // whenever a different tool or color is selected i.e. the state of tool picker is changed
         print("toolPickerSelectedToolDidChange")
     }
     
     func toolPickerIsRulerActiveDidChange(_ toolPicker: PKToolPicker) {
+        // whenever the state of the tool picker's ruler is changed, this is called
         print("toolPickerIsRulerActiveDidChange")
     }
     
     func toolPickerVisibilityDidChange(_ toolPicker: PKToolPicker) {
+        // whenever the visibility of tool picker is changed
         print("toolPickerVisibilityDidChange")
     }
     
