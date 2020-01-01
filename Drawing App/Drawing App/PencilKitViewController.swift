@@ -7,15 +7,43 @@
 //
 
 import UIKit
-import PencilKit
 
 class PencilKitViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    //1.
+    var pencilKitCanvas =  PKCanvas()
+    
+    //MARK: - iOS Life Cycle
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        //5.
+        addPencilKit()
+    }
+    
+    override func viewDidLayoutSubviews() {
+          super.viewDidLayoutSubviews()
+          //4.
+          updateCanvasOrientation(with: view.bounds)
+      }
+    
+    //MARK: - iOS override properties
+    override var prefersHomeIndicatorAutoHidden: Bool {
+          return true
+      }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true;
+    }
+    
+    //MARK: -  Setup Functions
+   //3.
+    private func addPencilKit() {
+       view.backgroundColor = .clear
         
-        let canvas = PKCanvasView(frame: view.bounds)
-        view.addSubview(canvas)
-        canvas.tool = PKInkingTool(.pen, color: .black, width: 15)
+       pencilKitCanvas  = createPencilKitCanvas(frame: view.frame, delegate: self)
+       view.addSubview(pencilKitCanvas)
     }
 }
+//2.
+extension PencilKitViewController: PencilKitInterface {}
+
+extension PencilKitViewController: PencilKitDelegate {}

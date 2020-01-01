@@ -13,6 +13,8 @@
 		4AB2018A23BC70400040DD06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AB2018923BC70400040DD06 /* Assets.xcassets */; };
 		4AB2018D23BC70400040DD06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AB2018B23BC70400040DD06 /* LaunchScreen.storyboard */; };
 		4AB2019523BC7E320040DD06 /* PencilKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2019423BC7E320040DD06 /* PencilKitViewController.swift */; };
+		4AB2019723BC80C90040DD06 /* PKCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2019623BC80C90040DD06 /* PKCanvas.swift */; };
+		4AB2019923BC893C0040DD06 /* PencilKitDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AB2019823BC893C0040DD06 /* PencilKitDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		4AB2018C23BC70400040DD06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AB2018E23BC70400040DD06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4AB2019423BC7E320040DD06 /* PencilKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitViewController.swift; sourceTree = "<group>"; };
+		4AB2019623BC80C90040DD06 /* PKCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKCanvas.swift; sourceTree = "<group>"; };
+		4AB2019823BC893C0040DD06 /* PencilKitDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PencilKitDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				4AB2018023BC703D0040DD06 /* AppDelegate.swift */,
 				4AB2018223BC703D0040DD06 /* SceneDelegate.swift */,
 				4AB2019423BC7E320040DD06 /* PencilKitViewController.swift */,
+				4AB2019623BC80C90040DD06 /* PKCanvas.swift */,
+				4AB2019823BC893C0040DD06 /* PencilKitDelegate.swift */,
 				4AB2018623BC703D0040DD06 /* Main.storyboard */,
 				4AB2018923BC70400040DD06 /* Assets.xcassets */,
 				4AB2018B23BC70400040DD06 /* LaunchScreen.storyboard */,
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AB2019723BC80C90040DD06 /* PKCanvas.swift in Sources */,
 				4AB2018123BC703D0040DD06 /* AppDelegate.swift in Sources */,
+				4AB2019923BC893C0040DD06 /* PencilKitDelegate.swift in Sources */,
 				4AB2019523BC7E320040DD06 /* PencilKitViewController.swift in Sources */,
 				4AB2018323BC703D0040DD06 /* SceneDelegate.swift in Sources */,
 			);
