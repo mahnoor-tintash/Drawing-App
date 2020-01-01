@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PencilKitViewController.swift
 //  Drawing App
 //
 //  Created by Mahnoor Khan on 01/01/2020.
@@ -19,4 +19,3 @@ class PencilKitViewController: UIViewController {
         canvas.tool = PKInkingTool(.pen, color: .black, width: 15)
     }
 }
-
